@@ -1,5 +1,6 @@
 name: buf-main
 on:
+    tags:
     push:
         branches:
             - main
