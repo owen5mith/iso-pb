@@ -1,8 +1,8 @@
-name: buf-push
+name: buf-main
 on:
     push:
         branches:
-            - '!main'
+            - main
 jobs:
     build:
         runs-on: ubuntu-latest
@@ -13,3 +13,6 @@ jobs:
         - uses: bufbuild/buf-breaking-action@v1
           with:
             against: "https://github.com/${GITHUB_REPOSITORY}.git#branch=main"
+        - uses: bufbuild/buf-push-action@v1
+          with:
+            buf_token: ${{ secrets.BUF_TOKEN }}
