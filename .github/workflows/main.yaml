@@ -1,7 +1,7 @@
 name: buf-main
 on:
-    tags:
     push:
+        tags:
         branches:
             - main
 jobs:
