@@ -2,6 +2,9 @@ name: buf-push
 on:
     push:
         branches:
+            - '*'       
+            - '*/*'
+            - '**'
             - '!main'
 jobs:
     build:
