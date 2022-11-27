@@ -3,6 +3,7 @@ syntax = "proto3";
 package iso_3166_1.v1;
 
 // See https://wikipedia.org/wiki/ISO_3166-1_alpha-2
+// Enum value is the ISO 3166-1 numeric value.
 enum ALPHA2 {
     ALPHA2_UNSPECIFIED = 0;
     ALPHA2_AF =	4	;
@@ -257,6 +258,7 @@ enum ALPHA2 {
 }
 
 // See https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3
+// Enum value is the ISO 3166-1 numeric value.
 enum ALPHA3 {
     ALPHA3_UNSPECIFIED = 0;
     ALPHA3_AFG =	4	;
