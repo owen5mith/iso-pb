@@ -1,0 +1,8 @@
+version: v1
+name: buf.build/owen5mith/iso
+breaking:
+  use:
+    - FILE
+lint:
+  use:
+    - DEFAULT
